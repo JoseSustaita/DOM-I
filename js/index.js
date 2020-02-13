@@ -42,8 +42,8 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Nav
-let navBarenu = document.querySelectorAll('a');
-let navBar = Array.from(navBarenu);
+let navLinks = document.querySelectorAll('a');
+let navBar = Array.from(navLinks);
 navBar[0].textContent = 'Services'
 navBar[1].textContent = 'Product'
 navBar[2].textContent = 'Vision'
@@ -64,3 +64,13 @@ navigator.appendChild(FAQ)
 navBar.forEach(i => {
   i.style.color = 'green';
 });
+
+// Text and circle img
+let ctaContent = document.querySelector('.cta h1');
+ctaContent.innerHTML = 'DOM<br>Is<br>Awesome';
+
+let ctaButton = document.querySelector('.cta button');
+ctaButton.textContent = "Get Started";
+
+let ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', 'img/header-img.png')
