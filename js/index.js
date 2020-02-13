@@ -42,6 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Nav
+
 let navLinks = document.querySelectorAll('a');
 let navBar = Array.from(navLinks);
 navBar[0].textContent = 'Services'
@@ -66,6 +67,7 @@ navBar.forEach(i => {
 });
 
 // Text and circle img
+
 let ctaContent = document.querySelector('.cta h1');
 ctaContent.innerHTML = 'DOM<br>Is<br>Awesome';
 
@@ -77,6 +79,7 @@ ctaImg.setAttribute('src', 'img/header-img.png')
 
 
 // Middle section
+
 let middleHeaders = document.querySelectorAll('.text-content h4');
 let midHead= Array.from(middleHeaders);
 midHead[0].textContent = 'Features'
@@ -95,4 +98,18 @@ middleCont[4].textContent = 'Vision content elementum magna eros, ac posuere elv
 
 let midImg = document.getElementById("middle-img");
 midImg.setAttribute('src', 'img/mid-page-accent.jpg')
+
+//Footer
+
+let contact = document.querySelector('.contact h4');
+contact.textContent = 'Contact'
+
+let contactContent = document.querySelectorAll('.contact p');
+let contactCont = Array.from(contactContent);
+contactCont[0].innerHTML = "123 Way 456 Street<br>Somewhere, USA";
+contactCont[1].textContent = "1 (888) 888-8888";
+contactCont[2].textContent = "sales@greatidea.io";
+
+let footerCont = document.querySelector('footer p');
+footerCont.textContent = 'Copyright Great Idea! 2018';
 
